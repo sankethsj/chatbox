@@ -491,6 +491,9 @@ a {
         font-size: small;
         padding: 4px;
     }
+    #msg{
+        min-width: 0
+    }
     .btn{
         font-size: smaller;
         padding: 0 4px;
