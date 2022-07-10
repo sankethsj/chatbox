@@ -5,7 +5,7 @@ const rooms = ['thecrazybox','thememebox']
 // Join user to chat
 function userJoin(id, username, room) {
   
-  var color = randomColor({luminosity: 'light'});
+  var color = randomColor({luminosity: 'bright'});
   const user = { id, username, room, color };
 
   if (!rooms.includes(room)){

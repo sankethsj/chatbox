@@ -96,6 +96,10 @@ function outputUsers(users) {
   users.forEach((user) => {
     const li = document.createElement('li');
     li.innerText = user.username;
+    li.style.color = user.color
+    if (user.username === username){
+      li.style.fontWeight = 'bold'
+    }
     userList.appendChild(li);
   });
 }

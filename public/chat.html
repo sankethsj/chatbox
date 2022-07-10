@@ -1,71 +1,61 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
-      integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk="
-      crossorigin="anonymous"
-    />
-    <link rel="stylesheet" href="css/style.css" />
-    <title>ChatBox - Free chat boxes</title>
-	</head>
-	<body>
-		<div class="navbar">
-			<div class="header">
-				<div class="head" onclick="window.location.replace('/')">Chat <span>Box</span>
-				</div>
-				<div class="sidebar">
-					<div class="theme-switch-wrapper">
-						<label class="theme-switch" for="checkbox">
-							<input type="checkbox" id="checkbox" />
-							<div class="slider round"></div>
-						</label>
-						<p id="emoji"></p>
-					</div>
-				</div>
-			</div>
-			<hr>
-		</div>
 
-    <div class="chat-container">
-      <header class="chat-header">
-        <h3><i class="fas fa-comments"></i> Box Name: <h2 id="box-name"></h2></h3>
-          
-        <a id="leave-btn" class="btn">Leave Box</a>
-      </header>
-      <main class="chat-main">
-        <div class="chat-sidebar">
-          <h3><i class="fas fa-users"></i> Users <i class="fas fa-circle"></i></h3>
-          <ul id="users"></ul>
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css"
+    integrity="sha256-mmgLkCYLUQbXn0B1SRqzHar6dCnv9oZFPEC1g1cwlkk=" crossorigin="anonymous" />
+  <link rel="stylesheet" href="css/style.css" />
+  <title>ChatBox - Free chat boxes</title>
+</head>
+
+<body>
+  <div class="navbar">
+    <div class="header">
+      <div class="head" onclick="window.location.replace('/')">Chat <span>Box</span>
+      </div>
+      <div class="sidebar">
+        <div class="theme-switch-wrapper">
+          <label class="theme-switch" for="checkbox">
+            <input type="checkbox" id="checkbox" />
+            <div class="slider round"></div>
+          </label>
+          <p id="emoji"></p>
         </div>
-        <div class="chat-messages"></div>
-      </main>
-      <div class="chat-form-container">
-        <form id="chat-form">
-          <input
-            id="msg"
-            type="text"
-            placeholder="Enter your Message"
-            required
-            autocomplete="off"
-            maxlength="256"
-            autofocus
-          />
-          <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
-        </form>
       </div>
     </div>
+    <hr>
+  </div>
 
-    <script
-      src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
-      integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4="
-      crossorigin="anonymous"
-    ></script>
-    <script src="/socket.io/socket.io.js"></script>
-    <script src="js/main.js"></script>
-    <script src="./js/darkmode.js"></script>
-  </body>
+  <div class="chat-container">
+    <header class="chat-header">
+      <h3><i class="fas fa-comments"></i> Box Name: <h2 id="box-name"></h2>
+      </h3>
+
+      <a id="leave-btn" class="btn">Leave Box</a>
+    </header>
+    <main class="chat-main">
+      <div class="chat-sidebar">
+        <h3><i class="fas fa-users"></i> Users <i class="fas fa-circle"></i></h3>
+        <ul id="users"></ul>
+      </div>
+      <div class="chat-messages"></div>
+    </main>
+    <div class="chat-form-container">
+      <form id="chat-form">
+        <input id="msg" type="text" placeholder="Enter your Message" required autocomplete="off" maxlength="256"
+          autofocus />
+        <button class="btn"><i class="fas fa-paper-plane"></i> Send</button>
+      </form>
+    </div>
+  </div>
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/qs/6.9.2/qs.min.js"
+    integrity="sha256-TDxXjkAUay70ae/QJBEpGKkpVslXaHHayklIVglFRT4=" crossorigin="anonymous"></script>
+  <script src="/socket.io/socket.io.js"></script>
+  <script src="js/main.js"></script>
+  <script src="./js/darkmode.js"></script>
+</body>
+
 </html>
