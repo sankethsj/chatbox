@@ -1,2 +1,1 @@
-# chatbox
- 
+Chat room for the world
