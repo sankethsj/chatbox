@@ -2,6 +2,7 @@ const chatForm = document.getElementById('chat-form');
 const chatMessages = document.querySelector('.chat-messages');
 const roomName = document.getElementById('box-name');
 const userList = document.getElementById('users');
+const input_box = document.getElementById("msg");
 
 // Get username and room from URL
 function getQueryParam(param) {
@@ -37,6 +38,12 @@ socket.on('message', (message) => {
   // Scroll down
   chatMessages.scrollTop = chatMessages.scrollHeight;
 });
+
+// Bring input box into view
+input_box.addEventListener('click', (e) => {
+  input_box.scrollIntoView();
+})
+
 
 // Message submit
 chatForm.addEventListener('submit', (e) => {
