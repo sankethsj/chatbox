@@ -282,7 +282,7 @@ a {
     border-radius: 4px;
 }
 .chat-sidebar ul li:hover{
-    background-color: rgba(0, 0, 0, 0.3);
+    background-color: var(--hr);
 }
 .chat-messages {
     height: 60vh;
@@ -470,7 +470,7 @@ a {
     }
     .chat-sidebar ul li{
         border-radius: 4px;
-        background-color: rgba(0, 0, 0, 0.3);
+        background-color: var(--hr);
         margin: 0 5px;
         padding: 4px;
         font-size: smaller;
